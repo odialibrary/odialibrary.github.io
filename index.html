@@ -1,151 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="or">
 
-<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>We're Getting Ready — Coming Soon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg1: #0f172a;
-      --bg2: #0b1220;
-      --accent: linear-gradient(90deg,#7c3aed,#06b6d4);
-      --glass: rgba(255,255,255,0.06);
-      --soft: rgba(255,255,255,0.04);
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
-    body{
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.12), transparent),
-                  radial-gradient(900px 400px at 95% 90%, rgba(6,182,212,0.08), transparent),
-                  linear-gradient(180deg,var(--bg1),var(--bg2));
-      color: #e6eef8;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      display:flex;align-items:center;justify-content:center;padding:32px;
-    }
-    .card{
-      width:100%;max-width:980px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:18px;padding:36px;box-shadow: 0 10px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px);
-      display:grid;grid-template-columns: 1fr 360px;gap:28px;align-items:center;
-    }
-    .logo{display:flex;align-items:center;gap:12px}
-    .logo .mark{width:56px;height:56px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Outfit;color:white;font-size:20px;box-shadow: 0 6px 18px rgba(12,13,54,0.6);}
-    h1{margin:0;font-family:Outfit,Inter;font-size:28px;letter-spacing:-0.6px}
-    p.lead{margin:10px 0 18px;color:rgba(230,238,248,0.85)}
-    .features{display:flex;gap:12px;flex-wrap:wrap}
-    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px;color:#cfe9ff}
-    .countdown{display:flex;gap:10px;margin-top:18px}
-    .countdown .unit{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px 18px;border-radius:10px;text-align:center;min-width:68px}
-    .countdown .number{font-family:Outfit;font-size:20px}
-    .countdown .label{font-size:11px;color:#9fb9d6;margin-top:6px}
-    form.subscribe{display:flex;gap:8px;margin-top:20px}
-    input.email{flex:1;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;font-size:14px}
-    button.btn{padding:12px 16px;border-radius:10px;border:none;background-image:var(--accent);color:white;font-weight:600;cursor:pointer}
-    .right{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border-radius:12px}
-    .socials{display:flex;gap:10px;margin-top:14px}
-    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:var(--soft);text-decoration:none;color:inherit}
-    .meta{font-size:13px;color:#9fb9d6;margin-top:12px}
-    /* responsive */
-    @media (max-width:880px){.card{grid-template-columns:1fr;}}
-    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
-    .mark{animation:floaty 4s ease-in-out infinite}
-    /* subtle star field */
-    .stars{position:absolute;inset:0;pointer-events:none;opacity:0.07;background-image:radial-gradient(circle at 20% 30%, rgba(255,255,255,0.12) 1px, transparent 2px), radial-gradient(circle at 80% 60%, rgba(255,255,255,0.08) 1px, transparent 2px);background-repeat:repeat;}
-  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Free Odia eBook Library</title>
+
+<meta name="description" content="Download free Odia PDF books, novels, stories and education books">
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  <div class="stars" aria-hidden="true"></div>
-  <main class="card" role="main">
-    <section>
-      <div class="logo" aria-hidden="true">
-        <div class="mark">OK</div>
-        <div>
-          <div style="font-size:14px;color:#9fb9d6;font-weight:600">ODIA LIBRARY</div>
-          <div style="font-size:12px;color:#75b6d9">Delivering books soon</div>
-        </div>
-      </div><h1>We're getting ready — coming soon</h1>
-  <p class="lead">We’re building something special for book lovers. New collections, downloads, and a smoother reading experience — launching shortly.</p>
 
-  <div class="features" aria-hidden="true">
-    <div class="pill">Beautiful eBooks</div>
-    <div class="pill">Easy Downloads</div>
-    <div class="pill">Mobile-ready</div>
-    <div class="pill">Searchable Library</div>
-  </div>
+<header>
 
-  <div class="countdown" id="countdown" aria-live="polite">
-    <div class="unit"><div class="number" id="days">--</div><div class="label">Days</div></div>
-    <div class="unit"><div class="number" id="hours">--</div><div class="label">Hours</div></div>
-    <div class="unit"><div class="number" id="minutes">--</div><div class="label">Minutes</div></div>
-    <div class="unit"><div class="number" id="seconds">--</div><div class="label">Seconds</div></div>
-  </div>
+<h1>📚 Odia eBook Library</h1>
 
-  <form class="subscribe" onsubmit="subscribe(event)">
-    <input class="email" id="email" type="email" placeholder="Enter your email to get updates" required />
-    <button class="btn">Notify Me</button>
-  </form>
+<input type="text" id="searchBox" placeholder="Search Odia Books...">
 
-  <div class="meta">Want to help test? Reply with your email and we’ll invite early readers.</div>
+</header>
+
+
+<section class="category-bar">
+
+<button onclick="filterCategory('all')">All</button>
+<button onclick="filterCategory('novel')">Novel</button>
+<button onclick="filterCategory('story')">Story</button>
+<button onclick="filterCategory('education')">Education</button>
+
 </section>
 
-<aside class="right">
-  <h3 style="margin:0 0 8px">Launch progress</h3>
-  <div style="height:12px;background:rgba(255,255,255,0.04);border-radius:8px;overflow:hidden;margin-bottom:14px">
-    <div id="progressBar" style="height:12px;border-radius:8px;width:46%;background-image:var(--accent);transition:width 800ms ease;"></div>
-  </div>
-  <p style="margin:0;color:#bde8ff;font-size:14px">Almost there — polishing content and fixing bugs. Thanks for your patience!</p>
 
-  <div class="socials" aria-hidden="true">
-    <a href="#" title="Twitter" aria-label="Twitter"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 5.8c-.6.3-1.2.5-1.9.6.7-.4 1.2-1 1.4-1.8-.7.4-1.5.6-2.3.8C18.6 4.7 17.4 4 16 4c-2.2 0-4 1.8-4 4 0 .3 0 .6.1.9C8.5 8.7 5.2 6.8 3 4c-.4.7-.6 1.5-.6 2.4 0 1.7.9 3.2 2.2 4.1-.5 0-1-.2-1.5-.4v.1c0 2.2 1.6 4 3.8 4.4-.4.1-.8.1-1.2.1-.3 0-.6 0-.9-.1.6 1.8 2.4 3.2 4.5 3.2-1.6 1.3-3.7 2.1-6 2.1H6c2 1.3 4.3 2 6.7 2 8 0 12.4-6.6 12.4-12.3v-.6c.8-.6 1.4-1.4 1.9-2.3-.7.3-1.5.5-2.3.6z" fill="currentColor"/></svg></a>
-    <a href="#" title="Facebook" aria-label="Facebook"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.1C22 6.7 17.6 2.5 12 2.5S2 6.7 2 12.1c0 5 3.7 9.1 8.5 9.9v-7H8.1v-3h2.4V9.3c0-2.4 1.4-3.8 3.6-3.8 1 0 2 .1 2 .1v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4v1.7h2.6l-.4 3h-2.2v7C18.3 21.2 22 17.1 22 12.1z" fill="currentColor"/></svg></a>
-    <a href="#" title="Instagram" aria-label="Instagram"> <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.3a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4zM18.7 5.5a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z" fill="currentColor"/></svg></a>
-  </div>
+<div class="ads">
 
-</aside>
+Ad Space
 
-  </main>  <script>
-    // set countdown target to 30 days from now so page remains useful anytime
-    const target = new Date(Date.now() + 30*24*60*60*1000);
+</div>
 
-    function pad(n){return String(n).padStart(2,'0')}
-    function updateCountdown(){
-      const now = new Date();
-      let diff = Math.max(0, target - now);
-      const days = Math.floor(diff / (24*60*60*1000));
-      diff -= days * 24*60*60*1000;
-      const hours = Math.floor(diff / (60*60*1000));
-      diff -= hours * 60*60*1000;
-      const minutes = Math.floor(diff / (60*1000));
-      diff -= minutes * 60*1000;
-      const seconds = Math.floor(diff / 1000);
-      document.getElementById('days').textContent = days;
-      document.getElementById('hours').textContent = pad(hours);
-      document.getElementById('minutes').textContent = pad(minutes);
-      document.getElementById('seconds').textContent = pad(seconds);
-    }
-    updateCountdown();
-    setInterval(updateCountdown,1000);
 
-    // simple subscribe behaviour (mailto fallback)
-    function subscribe(e){
-      e.preventDefault();
-      const email = document.getElementById('email').value.trim();
-      if(!email) return;
-      // try to use fetch to an example endpoint (disabled) then fallback to mailto
-      const subject = encodeURIComponent('Subscribe: Coming Soon Updates');
-      const body = encodeURIComponent('Please add '+email+' to the coming-soon list.\n\nSite: '+location.href);
-      window.location.href = 'mailto:hello@yourdomain.com?subject='+subject+'&body='+body;
-    }
+<main id="booksContainer"></main>
 
-    // little progress bar animation to make it lively
-    (function animateProgress(){
-      const p = document.getElementById('progressBar');
-      let val = 46; // initial
-      setInterval(()=>{ val += Math.random()*6 - 2; if(val<10) val=10; if(val>98) val=98; p.style.width = val+'%'; }, 1800);
-    })();
-  </script></body>
+
+<div id="pagination"></div>
+
+
+<footer>
+
+<p>Free Odia Books | Hosted on GitHub Pages</p>
+
+</footer>
+
+<script src="/script.js"></script>
+
+</body>
+
 </html>
